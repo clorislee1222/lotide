@@ -10,7 +10,7 @@ const eqArrays = function(a1, a2) {
   if (a1.length !== a2.length) {
     return false;
   } 
-  for (i = 0; i < a1.length; i++) {
+  for (let i = 0; i < a1.length; i++) {
     if (a1[i] !== a2[i]) {
       return false;
     }
@@ -19,9 +19,9 @@ const eqArrays = function(a1, a2) {
 };
 
 const assertArraysEqual = function(a1, a2) {
-  if (eqArrays(a1, a2) {
+  if (eqArrays(a1, a2)) {
     console.log(`✔️ ${a1} === ${a2}`);
-  }) else {
+  } else {
     console.log(`❌ ${a1} !== ${a2}`);
   }
 };
